@@ -1,0 +1,42 @@
+pip install pipenv
+
+pipenv install django
+
+
+pipenv shell
+
+django-admin
+
+
+django-admin startproject myproject .
+
+python manage.py 
+
+python manage.py runserver 
+
+ctrl shift p to select interpreter 
+
+pipenv --venv (copy path)
+
+
+python manage.py startapp playground
+
+
+add playground in setting.py installed apps
+
+add urls.py in playground app
+
+
+in myproject urls.py use from django.urls import path, include
+
+
+add templates folder in playground app for html files
+
+
+pip install mysql-connector-python
+
+pip install mysqlclient
+
+python manage.py makemigrations
+
+python manage.py migrate

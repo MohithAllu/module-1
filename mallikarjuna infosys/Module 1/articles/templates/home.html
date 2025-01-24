@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Welcome to Article Management</h1>
+<ul>
+    {% for article in articles %}
+    <li>
+        <strong>{{ article.title }}</strong> by {{ article.author.username }}
+        <p>{{ article.content|slice:":100" }}...</p>
+        <a href="{% url 'edit_article' article.id %}">Edit</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
